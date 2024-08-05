@@ -1,0 +1,27 @@
+    1  sudo yum update -y
+    2  sudo yum install -y mc git htop nano curl wget ansible ncdu httpd
+    3  ps aux
+    4  sudo systemctl status httpd
+    5  sudo systemctl start httpd
+    6  sudo systemctl status httpd
+    7  sudo systemctl enable httpd
+    8  sudo systemctl is-enabled httpd
+    9  sudo yum install -y epel-release
+   10  sudo yum install -y stress
+   11  stress --cpu 4 --timeout 30s
+   12  sudo amazon-linux-extras install epel -y
+   13  sudo yum install -y stress
+   14  stress --cpu 4 --timeout 30s
+   15  top
+   16  ps aux | grep stress
+   17  sudo kill -9 3710 3711 3712 3713 3714
+   18  lsblk
+   19  sudo mkfs -t ext4 /dev/xvdb
+   20  sudo mkdir /mnt/ebs
+   21  sudo mount /dev/xvdb /mnt/ebs
+   22  df -h
+   23  sudo blkid /dev/xvdb
+   24  sudo nano /etc/fstab
+   25  sudo mount -a
+   26  df -h
+   27  history
